@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>formulario</title>
+</head>
+<body>
+    <div class="campo">
+        <img src= "./img/comidas.jpg" alt= "ilustração da comida" class= "photo">
+        <h1 id="titulo1">Restaurante do Doka</h1>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            
+            <div class="campo">
+                <h2 id="titulo2">Informações de contato:</h2>
+            </div>
+
+            <div class="campo">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="endereço">Endereço</label>
+                <input type="text" name="endereço" id="endereço">
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="number" name="cep" id="cep">
+            </div>
+            <br>
+
+            <div class="campo">
+                <h2 id="titulo3">Informações do pedido:</h2>
+                <p id="subtitulo1">Tipo do pedido:</p>
+                <input type="radio" name="local" value="local" required>
+                <label for="local">Pegar no local</label>
+                <br>
+                 
+                <input type="radio" name="domicilio" value="domicilio" required>
+                <label for="domicilio">Entrega á domicilio</label>
+                <br>
+
+                <p id="subtitulo2">Faça o seu pedido:</p>
+                <input type="radio" name="strogonoff" value="strogonoff" required>
+                <label for="strogonoff">Strogonoff</label>
+                <br>
+                
+                <input type="radio" name="comida" value="comida" required>
+                <label for="comida">Comida Japonesa</label>
+                <br>
+
+                <input type="radio" name="pizza" value="pizza" required>
+                <label for="pizza">Pizza</label>
+                <br>
+
+                <input type="radio" name="lasanha" value="lasanha" required>
+                <label for="lasanha">Lasanha</label>
+                <br>
+
+                <input type="radio" name="feijoada" value="feijoada" required>
+                <label for="feijoada">Feijoada</label>
+                <br>
+
+                <input type="radio" name="batata" value="batata" required>
+                <label for="batata">Batata frita</label>
+                <br>
+
+                <div>
+                    <br>
+                    <label>Detalhes do pedido:</label>
+                    <textarea row="6" style="width: 26em;" id="detalhes" name="detalhes"></textarea>
+                </div>
+                <br>
+        
+                <button class="botão" type="submit">Concluido</button>
+        
+
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
